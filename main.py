@@ -38,3 +38,16 @@ def threebuttonui(button1, button2, button3, message, title):
         break
     window.close()
     return event
+def listbuttonui(buttonlist, message, title):
+    layout = [[sg.Text(message)]]
+    for i in buttonlist:
+        layout.append(f"[sg.Button({buttonlist[i]})")
+    window = sg.Window(title, layout, finalize=True)
+    window.Maximize()
+    while True:
+        event = window.read()
+        if event == sg.WIN_CLOSED or not event == "":
+            break
+        break
+    window.close()
+    return event
