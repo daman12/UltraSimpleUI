@@ -6,7 +6,6 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="UltraSimpleUI", # Replace with your own username
     version="0.0.1",
-    author="royalblueocean1",
     description="A package for making UI easier",
     long_description=long_description,
     long_description_content_type="text/markdown",
